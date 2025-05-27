@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/cmu.css" rel="stylesheet">
+    <title>Noble Duel Engine Showcase</title>
+    <style>
+        body {
+            font-family: "Computer Modern"; 
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin: 50px;
+        }
+        iframe {
+            border: none; 
+            width: 80%;
+            max-width: 720px;
+            height: 405px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Noble Duel Engine Showcase</h1>
+    <p>Below is a video showcasing some capabilites of the hand-built engine, including all movement related ones.</p>
+    <iframe
+        src="./noble_duel_engine_showcase.mp4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    >
+    </iframe>
+    <p>Engine features showcased in the video include:</p>
+    <ul>
+        <li>gravity</li>
+        <li>movement and object collisions</li>
+        <li>momentum conservation (objects are able to move each other)</li>
+        <li>slope traversal</li>
+        <li>physics of airborne objects</li>
+        <li>decorative objects (flowers)</li>
+        <li>simple floating platforms</li>
+    </ul>
+    <p>Engine features that have not been shocased in the video:</p>
+    <ul>
+        <li>items that can be picked up and dropped</li>
+        <li>item catagories which include simple firearms and thrusting weapons</li>
+        <li>elevators</li>
+    </ul>
+    <p>Also, please ignore that one floating flower, it has been assigned an invalid position on the canvas.</p>
+</body>
+</html>
