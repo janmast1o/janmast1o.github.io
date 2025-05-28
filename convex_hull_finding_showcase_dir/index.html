@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/cmu.css" rel="stylesheet">
+    <title>Convex Hull Finding App Showcase</title>
+    <style>
+        body {
+            font-family: "Computer Modern"; 
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin: 50px;
+        }
+        iframe {
+            border: none; 
+            width: 80%;
+            max-width: 720px;
+            height: 405px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convex Hull Finding App Showcase</h1>
+    <p>Below is a video showcasing usage of the app, which uses Graham algorithm to find convex hulls for sets of points.</p>
+    <p>The app uses Qt5 and QCustomPlot as the only external libraries.</p>
+    <iframe
+        src="./convex_hull_finding_showcase.mp4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    >
+    </iframe>
+    <p>App features include:</p>
+    <ul>
+        <li>adding points to the canvas by entering them in text format</li>
+        <li>running the algorithm and displaying the final results</li>
+        <li>running the algorithm with visualizng subsequent steps of the Graham algorithm</li>
+        <li>an ability to stop the visualzation</li>
+        <li>an ability to skip to the end in the visualization mode</li>
+        <li>an ability to display current stack of the Graham algorithm</li>
+    </ul>
+</body>
+</html>
